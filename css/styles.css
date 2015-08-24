@@ -410,4 +410,11 @@ button.fab {
 	line-height: 48px;
 	padding: 2px;
 	cursor: pointer;
+	transition: all .3s ease-out;
+}
+.code-sidebar-item:hover > a > i, .code-sidebar-item:hover > i {
+	color: #64b5f6 !important;
+}
+.code-sidebar-item:active > a > i, .code-sidebar-item:active > i, .code-sidebar-item:focus > a > i, .code-sidebar-item:focus > i {
+	color: #2196f3 !important;
 }

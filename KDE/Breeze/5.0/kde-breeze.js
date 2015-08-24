@@ -12,5 +12,5 @@ function kdeBreezeIni() {
 }
 window.addEventListener("load", function load(event){
 	window.removeEventListener("load", load, false);
-	kdeBreezeIni();  
+	kdeBreezeIni();
 },false);

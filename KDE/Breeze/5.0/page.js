@@ -3,6 +3,7 @@ function getCodeForButton(event) {
 }
 function startCode() {
 	selectCodeTrigger.removeEventListener("click", startCode, false);
+	selectCodeTrigger.childNodes[0].style.color = "#2196f3";
 	// Code Screen
 	var codeScreen = document.createElement("div");
 	codeScreen.className = "code-screen";
@@ -18,6 +19,7 @@ function startCode() {
 }
 function endCode() {
 	selectCodeTrigger.removeEventListener("click", endCode, false);
+	selectCodeTrigger.childNodes[0].style.color = "#fff";
 	// Code Screen
 	var codeScreen = document.getElementsByClassName('code-screen')[0];
 	codeScreen.remove();
