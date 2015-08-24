@@ -21,6 +21,7 @@
 	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
 	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
 	transition: all .3s ease-out;
+	display: inline-block;
 }
 .kde-breeze-button.disabled {
 	background-color: rgba(0,0,0,0) !important;
@@ -74,9 +75,6 @@
 }
 .kde-breeze-button.gradient:active {
 	background: #1d99f3;
-}
-div.kde-breeze-button {
-	display: inline;
 }
 .kde-breeze-button > i {
 	padding-right: 20px;
