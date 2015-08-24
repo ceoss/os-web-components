@@ -7,73 +7,297 @@ body {
 	width: 100%;
 	margin: 0;
 }
+.row {
+	width: 100%;
+}
 .col {
 	float: left;
 }
-.col.s10-10 {
-	width: 100%;
+@media (min-width: 1px) {
+	/* Hide */
+	.col.s0 {
+		display: none;
+	}
+	/* Tenths */
+	.col.s10-10 {
+		min-width: 100%;
+		display: block;
+	}
+	.col.s9-10 {
+		min-width: 90%;
+		display: block;
+	}
+	.col.s8-10 {
+		min-width: 80%;
+		display: block;
+	}
+	.col.s7-10 {
+		min-width: 70%;
+		display: block;
+	}
+	.col.s6-10 {
+		min-width: 60%;
+		display: block;
+	}
+	.col.s5-10 {
+		min-width: 50%;
+		display: block;
+	}
+	.col.s4-10 {
+		min-width: 40%;
+		display: block;
+	}
+	.col.s3-10 {
+		min-width: 30%;
+		display: block;
+	}
+	.col.s2-10 {
+		min-width: 20%;
+		display: block;
+	}
+	.col.s1-10 {
+		min-width: 10%;
+		display: block;
+	}
+	/* Twelveths */
+	.col.s12-12 {
+		min-width: 100%;
+		display: block;
+	}
+	.col.s11-12 {
+		min-width: 91.66%;
+		display: block;
+	}
+	.col.s10-12 {
+		min-width: 83.33%;
+		display: block;
+	}
+	.col.s9-12 {
+		min-width: 75%;
+		display: block;
+	}
+	.col.s8-12 {
+		min-width: 66.66%;
+		display: block;
+	}
+	.col.s7-12 {
+		min-width: 58.33%;
+		display: block;
+	}
+	.col.s6-12 {
+		min-width: 50%;
+		display: block;
+	}
+	.col.s5-12 {
+		min-width: 41.66%;
+		display: block;
+	}
+	.col.s4-12 {
+		min-width: 33.33%;
+		display: block;
+	}
+	.col.s3-12 {
+		min-width: 25%;
+		display: block;
+	}
+	.col.s2-12 {
+		min-width: 16.66%;
+		display: block;
+	}
+	.col.s1-12 {
+		min-width: 8.33%;
+		display: block;
+	}
 }
-.col.s9-10 {
-	width: 90%;
+@media (min-width: 601px) {
+	/* Hide */
+	.col.m0 {
+		display: none;
+	}
+	/* Tenths */
+	.col.m10-10 {
+		min-width: 100%;
+		display: block;
+	}
+	.col.m9-10 {
+		min-width: 90%;
+		display: block;
+	}
+	.col.m8-10 {
+		min-width: 80%;
+		display: block;
+	}
+	.col.m7-10 {
+		min-width: 70%;
+		display: block;
+	}
+	.col.m6-10 {
+		min-width: 60%;
+		display: block;
+	}
+	.col.m5-10 {
+		min-width: 50%;
+		display: block;
+	}
+	.col.m4-10 {
+		min-width: 40%;
+		display: block;
+	}
+	.col.m3-10 {
+		min-width: 30%;
+		display: block;
+	}
+	.col.m2-10 {
+		min-width: 20%;
+		display: block;
+	}
+	.col.m1-10 {
+		min-width: 10%;
+		display: block;
+	}
+	/* Twelveths */
+	.col.m12-12 {
+		min-width: 100%;
+		display: block;
+	}
+	.col.m11-12 {
+		min-width: 91.66%;
+		display: block;
+	}
+	.col.m10-12 {
+		min-width: 83.33%;
+		display: block;
+	}
+	.col.m9-12 {
+		min-width: 75%;
+		display: block;
+	}
+	.col.m8-12 {
+		min-width: 66.66%;
+		display: block;
+	}
+	.col.m7-12 {
+		min-width: 58.33%;
+		display: block;
+	}
+	.col.m6-12 {
+		min-width: 50%;
+		display: block;
+	}
+	.col.m5-12 {
+		min-width: 41.66%;
+		display: block;
+	}
+	.col.m4-12 {
+		min-width: 33.33%;
+		display: block;
+	}
+	.col.m3-12 {
+		min-width: 25%;
+		display: block;
+	}
+	.col.m2-12 {
+		min-width: 16.66%;
+		display: block;
+	}
+	.col.m1-12 {
+		min-width: 8.33%;
+		display: block;
+	}
 }
-.col.s8-10 {
-	width: 80%;
-}
-.col.s7-10 {
-	width: 70%;
-}
-.col.s6-10 {
-	width: 60%;
-}
-.col.s5-10 {
-	width: 50%;
-}
-.col.s4-10 {
-	width: 40%;
-}
-.col.s3-10 {
-	width: 30%;
-}
-.col.s2-10 {
-	width: 20%;
-}
-.col.s1-10 {
-	width: 10%;
-}
-/* Twelveths */
-.col.s12-12 {
-	width: 100%;
-}
-.col.s11-12 {
-	width: 91.66%;
-}
-.col.s10-12 {
-	width: 83.33%;
-}
-.col.s9-10 {
-	width: 75%;
-}
-.col.s8-10 {
-	width: 66.66%;
-}
-.col.s7-10 {
-	width: 58.33%;
-}
-.col.s6-10 {
-	width: 50%;
-}
-.col.s5-10 {
-	width: 41.66%;
-}
-.col.s4-10 {
-	width: 33.33%;
-}
-.col.s3-10 {
-	width: 25%;
-}
-.col.s2-10 {
-	width: 16.66%;
-}
-.col.s1-10 {
-	width: 8.33%;
+@media (min-width: 1200px) {
+	/* Hide */
+	.col.l0 {
+		display: none;
+	}
+	/* Tenths */
+	.col.l10-10 {
+		min-width: 100%;
+		display: block;
+	}
+	.col.l9-10 {
+		min-width: 90%;
+		display: block;
+	}
+	.col.l8-10 {
+		min-width: 80%;
+		display: block;
+	}
+	.col.l7-10 {
+		min-width: 70%;
+		display: block;
+	}
+	.col.l6-10 {
+		min-width: 60%;
+		display: block;
+	}
+	.col.l5-10 {
+		min-width: 50%;
+		display: block;
+	}
+	.col.l4-10 {
+		min-width: 40%;
+		display: block;
+	}
+	.col.l3-10 {
+		min-width: 30%;
+		display: block;
+	}
+	.col.l2-10 {
+		min-width: 20%;
+		display: block;
+	}
+	.col.l1-10 {
+		min-width: 10%;
+		display: block;
+	}
+	/* Twelveths */
+	.col.l12-12 {
+		min-width: 100%;
+		display: block;
+	}
+	.col.l11-12 {
+		min-width: 91.66%;
+		display: block;
+	}
+	.col.l10-12 {
+		min-width: 83.33%;
+		display: block;
+	}
+	.col.l9-12 {
+		min-width: 75%;
+		display: block;
+	}
+	.col.l8-12 {
+		min-width: 66.66%;
+		display: block;
+	}
+	.col.l7-12 {
+		min-width: 58.33%;
+		display: block;
+	}
+	.col.l6-12 {
+		min-width: 50%;
+		display: block;
+	}
+	.col.l5-12 {
+		min-width: 41.66%;
+		display: block;
+	}
+	.col.l4-12 {
+		min-width: 33.33%;
+		display: block;
+	}
+	.col.l3-12 {
+		min-width: 25%;
+		display: block;
+	}
+	.col.l2-12 {
+		min-width: 16.66%;
+		display: block;
+	}
+	.col.l1-12 {
+		min-width: 8.33%;
+		display: block;
+	}
 }

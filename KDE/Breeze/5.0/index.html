@@ -13,44 +13,45 @@
 		<script src="kde-breeze.js"></script>
 	</head>
 	<body>
-		<div class="heading">Regular</div>
-		<div class="kde-breeze-button">Button</div>
-		<a class="kde-breeze-button">Button</a>
-		<button class="kde-breeze-button">Button</button>
-
-		<div class="heading">Regular with Icon</div>
-		<div class="kde-breeze-button"><i class="mdi mdi-folder"></i>Button</div>
-		<a class="kde-breeze-button"><i class="mdi mdi-folder"></i>Button</a>
-		<button class="kde-breeze-button"><i class="mdi mdi-folder"></i>Button</button>
-
-		<div class="heading">Disabled</div>
-		<div class="kde-breeze-button disabled">Button</div>
-		<a class="kde-breeze-button disabled">Button</a>
-		<button class="kde-breeze-button disabled">Button</button>
-
-		<div class="heading">Disabled with Icon</div>
-		<div class="kde-breeze-button disabled"><i class="mdi mdi-folder"></i>Button</div>
-		<a class="kde-breeze-button disabled"><i class="mdi mdi-folder"></i>Button</a>
-		<button class="kde-breeze-button disabled"><i class="mdi mdi-folder"></i>Button</button>
-
-		<div class="heading">Gradient</div>
-		<div class="kde-breeze-button gradient">Button</div>
-		<a class="kde-breeze-button gradient">Button</a>
-		<button class="kde-breeze-button gradient">Button</button>
-
-		<div class="heading">Gradient with Icon</div>
-		<div class="kde-breeze-button gradient"><i class="mdi mdi-folder"></i>Button</div>
-		<a class="kde-breeze-button gradient"><i class="mdi mdi-folder"></i>Button</a>
-		<button class="kde-breeze-button gradient"><i class="mdi mdi-folder"></i>Button</button>
-
-		<div class="heading">Flat</div>
-		<div class="kde-breeze-button flat">Button</div>
-		<a class="kde-breeze-button flat">Button</a>
-		<button class="kde-breeze-button flat">Button</button>
-
-		<div class="heading">Flat with Icon</div>
-		<div class="kde-breeze-button flat"><i class="mdi mdi-folder"></i>Button</div>
-		<a class="kde-breeze-button flat"><i class="mdi mdi-folder"></i>Button</a>
-		<button class="kde-breeze-button flat"><i class="mdi mdi-folder"></i>Button</button>
+		<div id="elements">
+			<div class="row" id="checkboxes-radios">
+				<div class="col s6-10" id="checkboxes">
+					
+				</div>
+				<div class="col s4-10" id="radios">
+					
+				</div>
+			</div>
+			<div class="row" id="buttons">
+				<div class="row" id="labels-top-buttons">
+					<div class="col s0 m2-10"><div class="label-top-buttons"></div></div>
+					<div class="col s0 m2-10"><div class="label-top-buttons">Ready</div></div>
+					<div class="col s0 m2-10"><div class="label-top-buttons">Focus</div></div>
+					<div class="col s0 m2-10"><div class="label-top-buttons">Active</div></div>
+					<div class="col s0 m2-10"><div class="label-top-buttons">Disabled</div></div>
+				</div>
+				<div class="row" id="no-gradient">
+					<div class="col s10-10 m2-10"><div class="labels-left">No Gradient</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button focus">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button active">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button disabled">Button</div></div>
+				</div>
+				<div class="row" id="gradient">
+					<div class="col s10-10 m2-10"><div class="labels-left">Gradient</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button gradient">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button focus gradient">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button active gradient">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button disabled gradient">Button</div></div>
+				</div>
+				<div class="row" id="flat">
+					<div class="col s10-10 m2-10"><div class="labels-left">Flat</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button flat">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button focus flat">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button active flat">Button</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button disabled flat">Button</div></div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

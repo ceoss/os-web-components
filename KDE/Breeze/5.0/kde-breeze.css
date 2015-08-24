@@ -1,3 +1,55 @@
+/* Site */
+body {
+	background-color: #eff0f1;
+}
+.labels-left {
+	text-align: -webkit-right;
+	text-align: right;
+	padding: 14px 0;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: "Roboto";
+}
+#buttons > div.row > div.col > .label-top-buttons {
+	text-align: -webkit-center;
+	text-align: center;
+	padding: 14px 0;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: "Roboto";
+}
+#buttons > div.row > div.col {
+	text-align: center;
+	padding: 14px 0;
+}
+@media (max-width: 650px) {
+	.col.s10-10 {
+		min-width: 100%;
+	}
+	.labels-left {
+		text-align: -webkit-center;
+		text-align: center;
+		padding: 14px 0;
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.kde-breeze-button:after {
+		content: ": Ready";
+	}
+	.kde-breeze-button.focus:after {
+		content: ": Focus";
+	}
+	.kde-breeze-button.active:after {
+		content: ": Active";
+	}
+	.kde-breeze-button.disabled:after {
+		content: ": Disabled";
+	}
+	#labels-top-buttons {
+		display: none;
+	}
+}
+
 /* KDE Breeze */
 .kde-breeze-button {
 	border-radius: 4px;
@@ -42,22 +94,26 @@
 	background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f7 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f7',GradientType=0 );
 }
+.kde-breeze-button.gradient.disabled {
+	background: #1d99f3;
+}
 .kde-breeze-button.flat {
 	background-color: rgba(0,0,0,0);
 	border: 2px solid rgba(0,0,0,0);
+	border-radius: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
-.kde-breeze-button:focus {
+.kde-breeze-button:focus, .kde-breeze-button.focus {
 	background-color: #fcfcfc;
 	color: #535353;
 	border: 2px solid #1d99f3;
 }
-.kde-breeze-button.flat:focus {
+.kde-breeze-button.flat:focus, .kde-breeze-button.flat.focus {
 	background-color: rgba(0,0,0,0);
 }
-.kde-breeze-button:active {
+.kde-breeze-button:active, .kde-breeze-button.active {
 	background-color: #1d99f3;
 	color: #eff0f1;
 	border: 2px solid #2689d1;
@@ -65,7 +121,7 @@
 	-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 }
-.kde-breeze-button.flat:active {
+.kde-breeze-button.flat:active, .kde-breeze-button.flat.active {
 	background-color: #1d99f3;
 	color: #eff0f1;
 	border: 2px solid #2689d1;
@@ -73,7 +129,7 @@
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
-.kde-breeze-button.gradient:active {
+.kde-breeze-button.gradient:active, .kde-breeze-button.gradient.active {
 	background: #1d99f3;
 }
 .kde-breeze-button > i {
