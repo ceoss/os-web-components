@@ -80,7 +80,12 @@ window.addEventListener("load", function load(event){
 	allCodeTrigger.addEventListener("click", startAllCode, false);
 	allCode = document.getElementById("allCode");
 	codeScreen = document.getElementsByClassName("code-screen")[0];
-	document.getElementsByClassName("code-sidebar")[0].style.left = "0";
+	getDeviceState();
+	if (deviceState) {
+		document.getElementsByClassName("code-sidebar")[0].style.bottom = "0";
+	} else {
+		document.getElementsByClassName("code-sidebar")[0].style.left = "0";
+	};
 	pre = document.getElementsByTagName('pre');
 	for (var i = pre.length - 1; i >= 0; i--) {
 		pre[i].addEventListener('click', selectText ,false);
