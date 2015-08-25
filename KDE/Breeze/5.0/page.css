@@ -2,13 +2,6 @@
 body {
 	background-color: #eff0f1;
 }
-body * {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: transparent;
-}
 
 /* Buttons */
 .labels-left {
