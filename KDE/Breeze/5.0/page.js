@@ -60,7 +60,7 @@ function endAllCode() {
 	// Code Screen
 	codeScreen.style.backgroundColor = "rgba(0,0,0,0)";
 	codeScreen.style.pointerEvents = "none";
-	allCode.style.top = "100%";
+	allCode.style.top = "200%";
 	allCode.style.position = "fixed";
 }
 
