@@ -7,9 +7,9 @@ body {
 	width: 100%;
 	margin: 0;
 }
-.elements {
-	position: relative;
-	z-index: 1;
+#elements {
+	position: absolute;
+	width: 100%;
 }
 /* FAB */
 .fab {
