@@ -402,7 +402,7 @@ button.fab {
 	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
 	transition: all .3s ease-out;
 }
-.code-sidebar-item > a > i, .code-sidebar-item > i {
+.code-sidebar-item i {
 	color: #fff;
 	width: inherit;
 	display: inline-block;
@@ -413,6 +413,13 @@ button.fab {
 	padding: 2px;
 	cursor: pointer;
 	transition: all .3s ease-out;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.code-sidebar-item > a {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
