@@ -1,5 +1,13 @@
-function getCodeForButton(event) {
-	alert(event.currentTarget.innerHTML);
+function getCode(event) {
+	endSelectCode();
+	var html = event.currentTarget.innerHTML;
+	alert(html);
+	var htmlC = /class="([\w-]+)"/gi.exec(html);
+	alert(htmlC);
+	var htmlI = /id="([\w-]+)"/gi.exec(html);
+	alert(htmlI);
+	var htmlT = /<([\w-]+)/gi.exec(html);
+	alert(htmlT);
 }
 
 // Select Code
@@ -15,7 +23,7 @@ function startSelectCode() {
 	var buttons = document.getElementsByClassName('kde-breeze-button-code');
 	for (var i = buttons.length - 1; i >= 0; i--) {
 		buttons[i].classList.add("code");
-		buttons[i].addEventListener('click', getCodeForButton, false);
+		buttons[i].addEventListener('click', getCode, false);
 	};
 	selectCodeTrigger.addEventListener("click", endSelectCode, false);
 }
@@ -30,7 +38,7 @@ function endSelectCode() {
 	var buttons = document.getElementsByClassName('kde-breeze-button-code');
 	for (var i = buttons.length - 1; i >= 0; i--) {
 		buttons[i].classList.remove("code");
-		buttons[i].removeEventListener('click', getCodeForButton, false);
+		buttons[i].removeEventListener('click', getCode, false);
 	};
 	selectCodeTrigger.addEventListener("click", startSelectCode, false);
 }
@@ -72,5 +80,9 @@ window.addEventListener("load", function load(event){
 	allCodeTrigger.addEventListener("click", startAllCode, false);
 	allCode = document.getElementById("allCode");
 	codeScreen = document.getElementsByClassName("code-screen")[0];
-	document.getElementsByClassName("code-sidebar")[0].style.left = "0"
+	document.getElementsByClassName("code-sidebar")[0].style.left = "0";
+	pre = document.getElementsByTagName('pre');
+	for (var i = pre.length - 1; i >= 0; i--) {
+		pre[i].addEventListener('click', selectText ,false);
+	};
 },false);

@@ -28,6 +28,7 @@
 				</div>
 			</div>
 			<div class="row" id="buttons">
+				<!-- Without Icons -->
 				<div class="row" id="labels-top-buttons">
 					<div class="col s0 m2-10"><div class="label-top-buttons"></div></div>
 					<div class="col s0 m2-10"><div class="label-top-buttons">Ready</div></div>
@@ -57,6 +58,30 @@
 					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button disabled flat">Button</div></div></div>
 				</div>
 			</div>
+			<div class="row" id="icon-buttons">
+				<!-- Without Icons -->
+				<div class="row" id="no-gradient">
+					<div class="col s10-10 m2-10"><div class="labels-left">No Gradient</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button focus"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button active"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button disabled"><i class="fa fa-folder"></i>Button</div></div></div>
+				</div>
+				<div class="row" id="gradient">
+					<div class="col s10-10 m2-10"><div class="labels-left">Gradient</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button gradient"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button focus gradient"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button active gradient"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button disabled gradient"><i class="fa fa-folder"></i>Button</div></div></div>
+				</div>
+				<div class="row" id="flat">
+					<div class="col s10-10 m2-10"><div class="labels-left">Flat</div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button flat"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button focus flat"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button active flat"><i class="fa fa-folder"></i>Button</div></div></div>
+					<div class="col s10-10 m2-10"><div class="kde-breeze-button-code"><div class="kde-breeze-button disabled flat"><i class="fa fa-folder"></i>Button</div></div></div>
+				</div>
+			</div>
 		</div>
 		<div class="code-sidebar">
 			<div class="code-sidebar-item"><a target="_blank" href="https://github.com/xorprojects/OS-Web-Components/tree/master/KDE/Breeze/5.0"><i class="mdi mdi-github-circle"></i></a></div>
@@ -65,11 +90,19 @@
 			<div class="code-sidebar-item" id="downloadTrigger"><a target="_blank" href="https://github.com/xorprojects/OS-Web-Components/archive/master.zip"><i class="mdi mdi-download"></i></a></div>
 		</div>
 		<div class="code-screen"></div>
+		<div class="modal" id="selectCode">
+			<div class="modal-title"></div>
+			<div class="modal-heading">HTML:</div>
+			<pre><code class="language-markup"></code></pre>
+			<div class="modal-heading">JavaScript:</div>
+			<pre><code class="language-javascript"></code></pre>
+			<div class="modal-heading">CSS:</div>
+			<pre><code class="language-css"></code></pre>
+		</div>
 		<div class="modal" id="allCode">
-			<div class="modal-content">
-				<div class="modal-title">Code for KDE Breeze 5.0</div>
-				<div class="modal-heading">HTML:</div>
-				<pre><code class="language-markup">
+			<div class="modal-title">Code for KDE Breeze 5.0</div>
+			<div class="modal-heading">HTML:</div>
+			<pre><code class="language-markup">
 &#x3C;!-- KDE Breeze 
 Copyright 2015 XOR Projects
 Licensed under a Creative Commons Attribution 4.0 International License.
@@ -143,9 +176,9 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ --&#x3E;
 &#x3C;div class=&#x22;kde-breeze-button active flat&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-folder&#x22;&#x3E;&#x3C;/i&#x3E;Button&#x3C;/div&#x3E;
 &#x3C;!-- Disabled --&#x3E;
 &#x3C;div class=&#x22;kde-breeze-button disabled flat&#x22;&#x3E;&#x3C;i class=&#x22;fa fa-folder&#x22;&#x3E;&#x3C;/i&#x3E;Button&#x3C;/div&#x3E;
-				</code></pre>
-				<div class="modal-heading">JavaScript:</div>
-				<pre><code class="language-javascript">
+			</code></pre>
+			<div class="modal-heading">JavaScript:</div>
+			<pre><code class="language-javascript">
 /* KDE Breeze 
 Copyright 2015 XOR Projects
 Licensed under a Creative Commons Attribution 4.0 International License.
@@ -154,24 +187,24 @@ GitHub: https://github.com/xorprojects/OS-Web-Components/tree/master/KDE/Breeze/
 Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 // This JS allows the focusing of div and a tag buttons
 function kdeBreezeIni() {
-	var buttons = document.getElementsByClassName('kde-breeze-button');
-	for (var i = buttons.length - 1; i >= 0; i--) {
-		if (buttons[i].classList.contains("disabled")) {
-			if (buttons[i].tagName = "button") {
-				buttons[i].tabIndex = "-1";
-			}
-		} else {
-			buttons[i].tabIndex = "0";
-		};
-	};
+&#x9;var buttons = document.getElementsByClassName(&#x27;kde-breeze-button&#x27;);
+&#x9;for (var i = buttons.length - 1; i &#x3E;= 0; i--) {
+&#x9;&#x9;if (buttons[i].classList.contains(&#x22;disabled&#x22;)) {
+&#x9;&#x9;&#x9;if (buttons[i].tagName = &#x22;button&#x22;) {
+&#x9;&#x9;&#x9;&#x9;buttons[i].tabIndex = &#x22;-1&#x22;;
+&#x9;&#x9;&#x9;}
+&#x9;&#x9;} else {
+&#x9;&#x9;&#x9;buttons[i].tabIndex = &#x22;0&#x22;;
+&#x9;&#x9;};
+&#x9;};
 }
-window.addEventListener("load", function load(event){
-	window.removeEventListener("load", load, false);
-	kdeBreezeIni();
+window.addEventListener(&#x22;load&#x22;, function load(event){
+&#x9;window.removeEventListener(&#x22;load&#x22;, load, false);
+&#x9;kdeBreezeIni();
 },false);
-				</code></pre>
-				<div class="modal-heading">CSS:</div>
-				<pre><code class="language-css">
+			</code></pre>
+			<div class="modal-heading">CSS:</div>
+			<pre><code class="language-css">
 /* KDE Breeze 
 Copyright 2015 XOR Projects
 Licensed under a Creative Commons Attribution 4.0 International License.
@@ -179,96 +212,95 @@ http://creativecommons.org/licenses/by/4.0/
 GitHub: https://github.com/xorprojects/OS-Web-Components/tree/master/KDE/Breeze/5.0;
 Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 .kde-breeze-button {
-	border-radius: 4px;
-	background-color: #fcfcfc;
-	color: #4d4d4d;
-	border: 2px solid #acadad;
-	font-family: Calibri, Arial, sans-serif;
-	display: inline-block;
-	font-size: 24px;
-	letter-spacing: .3px;
-	padding: 8px 20px;
-	margin: 2px;
-	outline: none;
-	cursor: pointer;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: transparent;
-	white-space: nowrap;
-	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
-	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
-	transition: all .3s ease-out;
+&#x9;border-radius: 4px;
+&#x9;background-color: #fcfcfc;
+&#x9;color: #4d4d4d;
+&#x9;border: 2px solid #acadad;
+&#x9;font-family: Calibri, Arial, sans-serif;
+&#x9;display: inline-block;
+&#x9;font-size: 24px;
+&#x9;letter-spacing: .3px;
+&#x9;padding: 8px 20px;
+&#x9;margin: 2px;
+&#x9;outline: none;
+&#x9;cursor: pointer;
+&#x9;-moz-user-select: none;
+&#x9;-webkit-user-select: none;
+&#x9;-ms-user-select: none;
+&#x9;user-select: none;
+&#x9;-webkit-tap-highlight-color: transparent;
+&#x9;white-space: nowrap;
+&#x9;-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+&#x9;-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+&#x9;box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+&#x9;transition: all .3s ease-out;
 }
 .kde-breeze-button.disabled {
-	background: #eff0f1 !important;
-	color: #b2b3b4;
-	border: 2px solid #b2b3b4;
-	cursor: default;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	pointer-events: none;
+&#x9;background: #eff0f1 !important;
+&#x9;color: #b2b3b4;
+&#x9;border: 2px solid #b2b3b4;
+&#x9;cursor: default;
+&#x9;-webkit-box-shadow: none;
+&#x9;-moz-box-shadow: none;
+&#x9;box-shadow: none;
+&#x9;pointer-events: none;
 }
 .kde-breeze-button.gradient {
-	background: #fcfcfc;
-	background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f7 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f7));
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f7 100%);
-	background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f7 100%);
-	background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f7 100%);
-	background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f7 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f7',GradientType=0 );
+&#x9;background: #fcfcfc;
+&#x9;background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f7 100%);
+&#x9;background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f7));
+&#x9;background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f7 100%);
+&#x9;background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f7 100%);
+&#x9;background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f7 100%);
+&#x9;background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f7 100%);
+&#x9;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#x27;#ffffff&#x27;, endColorstr=&#x27;#f5f5f7&#x27;,GradientType=0 );
 }
 .kde-breeze-button.flat {
-	background-color: rgba(0,0,0,0);
-	border: 2px solid rgba(0,0,0,0);
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+&#x9;background-color: rgba(0,0,0,0);
+&#x9;border: 2px solid rgba(0,0,0,0);
+&#x9;-webkit-box-shadow: none;
+&#x9;-moz-box-shadow: none;
+&#x9;box-shadow: none;
 }
 .kde-breeze-button.flat.disabled {
-	background-color: rgba(0,0,0,0) !important;
+&#x9;background-color: rgba(0,0,0,0) !important;
 }
 .kde-breeze-button:focus, .kde-breeze-button.focus {
-	background-color: #fcfcfc;
-	color: #535353;
-	border: 2px solid #1d99f3;
+&#x9;background-color: #fcfcfc;
+&#x9;color: #535353;
+&#x9;border: 2px solid #1d99f3;
 }
 .kde-breeze-button.flat:focus, .kde-breeze-button.flat.focus {
-	background-color: rgba(0,0,0,0);
+&#x9;background-color: rgba(0,0,0,0);
 }
 .kde-breeze-button:active, .kde-breeze-button.active {
-	background-color: #1d99f3;
-	color: #eff0f1;
-	border: 2px solid #2689d1;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
-	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+&#x9;background-color: #1d99f3;
+&#x9;color: #eff0f1;
+&#x9;border: 2px solid #2689d1;
+&#x9;-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+&#x9;-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+&#x9;box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 }
 .kde-breeze-button.flat:active, .kde-breeze-button.flat.active {
-	background-color: #1d99f3;
-	color: #eff0f1;
-	border: 2px solid #2689d1;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+&#x9;background-color: #1d99f3;
+&#x9;color: #eff0f1;
+&#x9;border: 2px solid #2689d1;
+&#x9;-webkit-box-shadow: none;
+&#x9;-moz-box-shadow: none;
+&#x9;box-shadow: none;
 }
 .kde-breeze-button.gradient:active, .kde-breeze-button.gradient.active {
-	background: #1d99f3;
+&#x9;background: #1d99f3;
 }
-.kde-breeze-button > i {
-	padding-right: 20px;
-	line-height: 18px;
-	color: #4d4d4d;
+.kde-breeze-button &#x3E; i {
+&#x9;padding-right: 20px;
+&#x9;line-height: 18px;
+&#x9;color: #4d4d4d;
 }
-.kde-breeze-button.disabled > i {
-	color: #aeafb0;
+.kde-breeze-button.disabled &#x3E; i {
+&#x9;color: #aeafb0;
 }
-				</code></pre>
-			</div>
+			</code></pre>
 		</div>
 		<script src="/OS-Web-Components/js/prism.js"></script>
 	</body>

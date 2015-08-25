@@ -20,7 +20,7 @@ body {
 	line-height: 24px;
 	font-family: "Roboto";
 }
-#buttons > div.row > div.col {
+#buttons > div.row > div.col, #icon-buttons > div.row > div.col {
 	text-align: center;
 	padding: 14px 0;
 }
