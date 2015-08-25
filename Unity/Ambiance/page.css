@@ -1,0 +1,53 @@
+/* Site */
+body {
+	background-color: #eff0f1;
+}
+
+/* Buttons */
+.labels-left {
+	text-align: -webkit-right;
+	text-align: right;
+	padding: 14px 0;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: "Roboto";
+}
+#buttons > div.row > div.col > .label-top-buttons {
+	text-align: -webkit-center;
+	text-align: center;
+	padding: 14px 0;
+	font-size: 24px;
+	line-height: 24px;
+	font-family: "Roboto";
+}
+#buttons > div.row > div.col, #icon-buttons > div.row > div.col {
+	text-align: center;
+	padding: 14px 0;
+}
+@media (max-width: 650px) {
+	.col.s10-10 {
+		min-width: 100%;
+	}
+	.labels-left {
+		text-align: -webkit-center;
+		text-align: center;
+		padding: 14px 0;
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.unity-ambiance-button:after {
+		content: ": Ready";
+	}
+	.unity-ambiance-button.focus:after {
+		content: ": Focus";
+	}
+	.unity-ambiance-button.active:after {
+		content: ": Active";
+	}
+	.unity-ambiance-button.disabled:after {
+		content: ": Disabled";
+	}
+	#labels-top-buttons {
+		display: none;
+	}
+}
