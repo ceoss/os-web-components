@@ -30,7 +30,6 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 	user-select: none;
 	-webkit-tap-highlight-color: transparent;
 	white-space: nowrap;
-	transition: all .3s ease-out;
 }
 .unity-ambiance-button:hover {
 	background: #fcfcfc;
@@ -56,6 +55,9 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 	background-color: #fcfcfc;
 	color: #535353;
 	border: 1px solid #D97449;
+	-moz-box-shadow: inset #F0BAA6 0 0 1px 1px;
+	-webkit-box-shadow: inset #F0BAA6 0 0 1px 1px;
+	box-shadow: inset #F0BAA6 0 0 1px 1px;
 }
 .unity-ambiance-button:active, .unity-ambiance-button.active {
 	background: #EEEEEE;
