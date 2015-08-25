@@ -405,7 +405,7 @@ button.fab {
 .code-sidebar-item:hover > a > i, .code-sidebar-item:hover > i {
 	color: #64b5f6 !important;
 }
-.code-sidebar-item:active > a > i, .code-sidebar-item:active > i, .code-sidebar-item:focus > a > i, .code-sidebar-item:focus > i {
+.code-sidebar-item:active > a > i, .code-sidebar-item:active > i {
 	color: #2196f3 !important;
 }
 /* Modal */
