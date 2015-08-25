@@ -371,23 +371,6 @@ button.fab {
 	position: relative;
 	background-color: #eff0f1;
 }
-.kde-breeze-button-code {
-	display: inline-block;
-	z-index: 10;
-	transition: all .3s ease-out;
-}
-.kde-breeze-button-code.code {
-	border-radius: 4px;
-	padding: 6px;
-	-webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-}
-.kde-breeze-button-code.code:focus, .kde-breeze-button-code.code:active, .kde-breeze-button-code.code:hover {
-	-webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-}
 .code-sidebar {
 	position: fixed;
 	z-index: 11;
