@@ -4,6 +4,7 @@ Licensed under a Creative Commons Attribution 4.0 International License.
 http://creativecommons.org/licenses/by/4.0/
 GitHub: https://github.com/xorprojects/OS-Web-Components/tree/master/KDE/Breeze/5.0;
 Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
+/* Buttons */
 .kde-breeze-button {
 	border-radius: 4px;
 	background-color: #fcfcfc;
@@ -92,4 +93,52 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 }
 .kde-breeze-button.disabled > i {
 	color: #aeafb0;
+}
+
+/* Checkboxes */
+input[type=checkbox]:not(old).kde-breeze-checkbox,
+input[type=radio]:not(old).kde-breeze-checkbox{
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	opacity: 0;
+}
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 32px;
+  height           : 32px;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid #7f8285;
+  border-radius    : 0.25em;
+  background       : rgba(0,0,0,0);
+  vertical-align   : bottom;
+}
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{  
+}
+input[type=checkbox]:not(old):checked + label > span > span {
+	display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background-color:  #7f8285;
+}
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);  
 }

@@ -7,7 +7,7 @@ body {
 .labels-left {
 	text-align: -webkit-right;
 	text-align: right;
-	padding: 14px 0;
+	padding: 12px 0;
 	font-size: 24px;
 	line-height: 24px;
 	font-family: "Roboto";
@@ -15,14 +15,15 @@ body {
 #buttons > div.row > div.col > .label-top-buttons {
 	text-align: -webkit-center;
 	text-align: center;
-	padding: 14px 0;
+	padding: 12px 0;
 	font-size: 24px;
 	line-height: 24px;
 	font-family: "Roboto";
 }
 #buttons > div.row > div.col, #icon-buttons > div.row > div.col {
+	text-align: -webkit-center;
 	text-align: center;
-	padding: 14px 0;
+	padding: 12px 0;
 }
 @media (max-width: 650px) {
 	.col.s10-10 {
@@ -31,7 +32,7 @@ body {
 	.labels-left {
 		text-align: -webkit-center;
 		text-align: center;
-		padding: 14px 0;
+		padding: 12px 0;
 		font-size: 24px;
 		line-height: 24px;
 	}
