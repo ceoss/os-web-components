@@ -68,10 +68,14 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 	background: -ms-linear-gradient(top,  #E2E2E2 0%,#F0F0F0 100%);
 	background: linear-gradient(to bottom,  #E2E2E2 0%,#F0F0F0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2E2E2', endColorstr='#F0F0F0',GradientType=0 );
-}	color: #eff0f1;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+}
+.unity-ambiance-button > i {
+	padding-right: 20px;
+	line-height: 20px;
+	font-size: 20px;
 }
 .unity-ambiance-button.disabled > i {
 	color: #aeafb0;
