@@ -30,8 +30,12 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 	user-select: none;
 	-webkit-tap-highlight-color: transparent;
 	white-space: nowrap;
+	/*-webkit-transition: all .3s ease-out;*/
+	/*-moz-transition: all .3s ease-out;*/
+	/*-o-transition: all .3s ease-out;*/
+	/*transition: all .3s ease-out;*/
 }
-.unity-ambiance-button:hover {
+.unity-ambiance-button:hover, .unity-ambiance-button.hover {
 	background: #fcfcfc;
 	background: -moz-linear-gradient(top,  #FEFEFE 0%, #E5E5E5 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E5E5E5));
@@ -52,7 +56,7 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 	pointer-events: none;
 }
 .unity-ambiance-button:focus, .unity-ambiance-button.focus {
-	background-color: #fcfcfc;
+	background: #fcfcfc;
 	color: #535353;
 	border: 1px solid #D97449;
 	-moz-box-shadow: inset #F0BAA6 0 0 1px 1px;
@@ -68,6 +72,7 @@ Website: http://xor.tech/OS-Web-Components/KDE/Breeze/5.0/ */
 	background: -ms-linear-gradient(top,  #E2E2E2 0%,#F0F0F0 100%);
 	background: linear-gradient(to bottom,  #E2E2E2 0%,#F0F0F0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2E2E2', endColorstr='#F0F0F0',GradientType=0 );
+	border: 1px solid #D97449;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
 	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
